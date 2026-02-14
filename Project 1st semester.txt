@@ -1,0 +1,550 @@
+#include<iostream>
+#include<iomanip>
+#include <cstdlib>
+#include <windows.h>
+using namespace std;
+struct passenger_info{
+	string name;
+	string age;
+	string passport_num;
+	string email;
+};
+
+
+
+int sum1=0,sum2=0,sum3=0,sum4=0,sum5=0,sum6=0,sum7=0,sum8=0,sum9=0,sum10=0,sum11=0,sum12=0,sum13=0,sum14=0,sum15=0;
+int num1=0,num2=0,num3=0, num4=0, num5=0, num6=0, num7=0, num8=0, num9=0, num10=0, num11=0, num12=0, num13=0, num14=0, num15=0;
+int num16=0,num17=0,num18=0, num19=0, num20=0, num21=0, num22=0, num23=0, num24=0, num25=0, num26=0, num27=0, num28=0, num29=0, num30=0;
+int  choice1;
+double amount;
+
+// Ticket Purchasing Function
+
+void ticket_booking(){
+	cout << "Enter amount that you want to deposit: ";
+	cin>> amount;
+if (amount>=23000){
+do {
+	
+cout << "Enter 1 for FRENCH AIRLINES "<<endl;
+cout << "Enter 2 for DUBAI AIRLINES "<<endl;
+cout << "Enter 3 for UNITED AIRWAYS "<<endl;
+cout << "Enter 4 for FLY EMIRATES "<<endl;
+cout << "Enter 5 for TURKISH AIRLINES "<<endl;
+cout << "Enter 0 to exit "<<endl;
+cin>> choice1;
+cout << endl;
+switch (choice1) {
+	case 1: {
+	    cout<<"You have chosen FRENCH AIRLINES "<<endl;
+		cout << "Enter 1 for First class"<< endl;
+		cout << "Enter 2 for Business Class"<<endl;
+		cout << "Enter 3 for Economy class"<<endl;
+		int choice;
+		cout << "Enter your choice: ";
+		cin>> choice;
+		cout <<endl;
+		switch (choice) {
+			case 1:{
+				
+				cout << "You have choosen First class"<<endl;
+					cout << "Enter number of tickets: "<<endl;
+					cin>>num1;
+					sum1+=num1;
+				amount -= (num1*55000);
+				break;  } 
+				    
+		
+			case 2:{
+				
+				cout << "You have choosen Business class"<<endl;
+				cout << "Enter number of tickets: "<<endl;
+				cin>>num2;
+				sum1+=num2;
+				amount -= (num2*45000);
+				break;    }   
+			
+			case 3:
+				cout << "You have choosen economy class"<<endl;
+				cout << "Enter number of tickets: ";
+				cin>>num3;
+				sum3+=num3;
+				amount -= (num3*35000);
+				break;  }     
+			
+		
+		break;
+		
+	}
+	
+	case 2:  {
+	
+		cout << "You have choosen DUBAI AIRLINES"<<endl;
+		cout << "Enter 1 for First class"<< endl;
+		cout << "Enter 2 for Business Class"<<endl;
+		cout << "Enter 3 for Economy class"<<endl;
+		int choice;
+		cout << "Enter your choice: ";
+		cin>> choice;
+		cout << endl;
+		switch (choice) {
+			case 1:
+				cout << "You have choosen First class"<<endl;
+				cout << "Enter number of tickets: ";
+				cin>>num4;
+				sum4+=num4;
+				amount -= (num4*50000);
+				break;       
+			
+			case 2:
+				cout << "You have choosen Business class"<<endl;
+				cout << "Enter number of tickets: ";
+				cin>>num5;
+				sum5+=num5;
+				amount -= (num5*40000);
+				break;       
+			
+			case 3:
+				cout << "You have choosen economy class"<<endl;
+				cout << "Enter number of tickets: ";
+				cin>> num6;
+				sum6+=num6;
+				amount -= (num6*30000);
+				break; }
+			
+		break;
+		
+	}
+	case 3:{
+		cout << "You have choosen UNITED AIRWAYS"<<endl;
+		cout << "Enter 1 for First class"<< endl;
+		cout << "Enter 2 for Business Class"<<endl;
+		cout << "Enter 3 for Economy class"<<endl;
+		int choice;
+		cout << "Enter your choice: ";
+		cin>> choice;
+		cout << endl;
+		switch (choice) {
+			case 1: 
+				cout << "You have choosen First class"<<endl;
+				cout << "Enter number of tickets: ";
+				cin>> num7;
+				sum7+=num7;
+				amount -= (num7*48000);
+				break;
+			
+			case 2:
+				cout << "You have choosen Business class"<<endl;
+				cout << "Enter number of tickets: ";
+				cin>> num8;
+				sum8+=num8;
+				amount -= (num8*38000);
+				break;
+			
+			case 3:
+				cout << "You have choosen economy class"<<endl;
+				cout << "Enter number of tickets: ";
+				cin>> num9;
+				sum9+=num9;
+				amount -= num9*28000;
+				break;}
+			
+		
+		break;
+	}
+	
+	
+	case 4: {
+		cout << "You have choosen FLY EMIRATES"<<endl;
+		cout << "Enter 1 for First class"<< endl;
+		cout << "Enter 2 for Business Class"<<endl;
+		cout << "Enter 3 for Economy class"<<endl;
+		int choice;
+		cout << "Enter your choice: ";
+		cin>> choice;
+		cout << endl;
+		switch (choice) {
+			case 1:
+				cout << "You have choosen First class"<<endl;
+				cout << "Enter number of tickets: ";
+				cin>> num10;
+				sum10+=num10;
+				amount -= (num10*45000);
+				break;
+			
+			case 2:
+				cout << "You have choosen Business class"<<endl;
+				cout << "Enter number of tickets: ";
+				cin>> num11;
+				sum11+=num11;
+				amount -= (num11*35000);
+				break;
+			
+			case 3:
+				cout << "You have choosen economy class"<<endl;
+				cout << "Enter number of tickets: ";
+				cin>> num12;
+				sum12+=num12;
+				amount -= (num12*25000);
+				break;}
+			
+	break;	
+	}
+		case 5: {
+		cout << "You have choosen TURKISH AIRLINES"<<endl;
+		cout << "Enter 1 for First class"<< endl;
+		cout << "Enter 2 for Business Class"<<endl;
+		cout << "Enter 3 for Economy class"<<endl;
+		int choice;
+		cout << "Enter your choice: ";
+		cin>> choice;
+		cout <<endl;
+		switch (choice) {
+			case 1:
+				cout << "You have choosen First class"<<endl;
+				cout << "Enter number of tickets: ";
+				cin>> num13;
+				sum13+=num13;
+				amount -= (num13*43000);
+				break;
+			
+			case 2:
+				cout << "You have choosen Business class"<<endl;
+				cout << "Enter number of tickets: ";
+				cin>> num14;
+				sum14+=num14;
+				amount -= (num14*33000);
+				break;
+			
+			case 3: 
+				cout << "You have choosen economy class"<<endl;
+				cout << "Enter number of tickets: ";
+				cin>> num15;
+				sum15+=num15;
+				amount -= (num15*23000);
+				break; }
+			
+		
+		break;
+	}
+
+
+} 
+
+} while (choice1!=0);
+
+
+}
+else {
+	cout << "Your amount is insufficient to book any ticket"<<endl;
+	exit (1);
+}
+
+}
+
+// Ticket Cancelation Function
+
+void cancel_ticket() {
+int choice2;
+do
+{
+		cout << "=========================================================================================="<<endl;
+		cout << "--------------------------         If you want to cancel any ticket             ----------------------------------------"<<endl<<endl;;
+		cout << "=========================================================================================="<<endl;
+		cout << "Enter 1 for French Airlines "<<endl;
+		cout << "Enter 2 for Dubai Airlines"<<endl;
+		cout << "Enter 3 United Airways" << endl;
+		cout << "Enter 4 Fly Emirates"<<endl;
+		cout << "Enter 5 for Turkish"<<endl;
+		cout << "Enter 0 to exit"<<endl<<endl;
+	
+		cin>> choice2;
+	if(choice2==1) {
+		cout << "You have choosen French Airlines"<<endl;
+		cout << "Which class do you want: "<<endl;
+		cout << "Press 1 for First class"<<endl;
+		cout << "Press 2 for Business class"<<endl;
+		cout << "Press 3 Economy class"<<endl<<endl;
+		int choice;
+		cin>> choice;
+		if (choice==1) {
+			cout << "You have choosen First class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num16;
+			if (num16<=sum1) {
+			sum1-=num16;
+			amount+=(num16*55000);}
+			else {
+				break;
+			}
+		}	if (choice==2) {
+			cout << "You have choosen Business class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num17;
+			if (num17<=sum2){
+			sum2-=num17;
+			amount+=(num17*45000);}
+			else {
+				break;
+			}
+			
+		}
+			if (choice==3) {
+			cout << "You have choosen Economy class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num18;
+			if (num18<=sum3) {
+			sum3-=num18;
+			amount+=(num18*35000) ;}
+			else {
+				break;
+			}
+		}
+	}
+	//Flight 2
+	if(choice2==2) {
+		cout << "You have choosen Dubai Airline"<<endl;
+		cout << "Which class do you want: "<<endl;
+		cout << "Press 1 for First class"<<endl;
+		cout << "Press 2 for Business class"<<endl;
+		cout << "Press 3 Economy class"<<endl<<endl;
+		int choice;
+		cin>> choice;
+		if (choice==1) {
+			cout << "You have choosen First class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num19;
+			if (num19<=sum4){
+			sum4-=num19;
+			amount+=(num19*50000);}
+			else {
+				break;
+			}
+		}	if (choice==2) {
+			cout << "You have choosen Business class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num20;
+			if (num20<=sum5){
+			sum5-=num20;
+			amount+=(num20*40000);}
+			else {
+				break;
+			}
+		}
+			if (choice==3) {
+			cout << "You have choosen Economy class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num21;
+			if (num21<=sum6){
+			sum6-=num21;
+			amount+=(num21*30000);}
+			else {
+				break;
+			}
+		}
+	}
+	
+	//Flight 3
+	if(choice2==3) {
+		cout << "You have choosen United Airways "<<endl;
+		cout << "Which class do you want: "<<endl;
+		cout << "Press 1 for First class"<<endl;
+		cout << "Press 2 for Business class"<<endl;
+		cout << "Press 3 Economy class"<<endl<<endl;
+		int choice;
+		cin>> choice;
+		if (choice==1) {
+			cout << "You have choosen First class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num22;
+			if (num22<=sum7){
+			sum7-=num22;
+			amount+=(num22*48000);}
+			else {
+				break;
+			}
+		}	if (choice==2) {
+			cout << "You have choosen Business class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num23;
+			if (num23<=sum8){
+			sum8-=num23;
+			amount+=(num23*38000);}
+			else {
+				break;
+			}
+		}
+			if (choice==3) {
+			cout << "You have choosen Economy class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num24;
+			if (num24<=sum9){
+			sum9-=num24;
+			amount+=(num24*28000);}
+			else {
+				break;
+			}
+		}
+	}
+	
+	
+
+	//Flight 4
+	if(choice2==4) {
+		cout << "You have choosen Fly Emirates Express"<<endl;
+		cout << "Which class do you want: "<<endl;
+		cout << "Press 1 for First class"<<endl;
+		cout << "Press 2 for Business class"<<endl;
+		cout << "Press 3 Economy class"<<endl<<endl;
+		int choice;
+		cin>> choice;
+		if (choice==1) {
+			cout << "You have choosen First class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num25;
+			if (num25<=10) {
+			sum10-=num25;
+			amount+=(num25*45000);}
+			else {
+				break;
+			}
+		}	if (choice==2) {
+			cout << "You have choosen Business class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num26;
+			if (num26<=sum11) {
+			sum11-=num26;
+			amount+=(num26*35000);}
+			else {
+				break;
+			}
+		}
+			if (choice==3) {
+			cout << "You have choosen Economy class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num27;
+			if (num27<=sum12) {
+			sum12-=num27;
+			amount+=(num27*25000);}
+			else {
+				break;
+			}
+		}
+	}
+	//Flight 5
+	if(choice2==5) {
+		cout << "You have choosen Turkish airlines"<<endl;
+		cout << "Which class do you want: "<<endl;
+		cout << "Press 1 for First class"<<endl;
+		cout << "Press 2 for Business class"<<endl;
+		cout << "Press 3 Economy class"<<endl<<endl;
+		int choice;
+		cin>> choice;
+		if (choice==1) {
+			cout << "You have choosen First class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num28;
+			if (num28<=sum13){
+			sum13-=num28;
+			amount+=(num28*43000);}
+			else {
+				break;
+			}
+		}	if (choice==2) {
+			cout << "You have choosen Business class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num29;
+			if (num29<=sum14) {
+			sum14-=num29;
+			amount+=(num29*33000);}
+			else {
+				break;
+			}
+		}
+			if (choice==3) {
+			cout << "You have choosen Economy class"<<endl;
+			cout <<"How many tickets do you want to cancel"<<endl;
+			cin>>num30;
+			if (num30<=sum15){
+			sum15-=num30;
+			amount+=(num30*23000);}
+			else {
+				break;
+			}
+		}
+	}
+} while(choice2!=0);
+}
+
+// Final Data showcase Function
+void Final_data() {
+	cout << "Total number of tickets purchased of French Airlines"<< " : "<<endl; 
+	cout << "First class tickets : "<<sum1<<endl;
+	cout << "Business class tickets : "<<sum2<<endl;
+	cout<< "Economy class tickets: "<<sum3<<endl<<endl;
+	cout << "Total number of tickets purchased of Dubai Airlines"<< " : "<<endl;
+	cout <<"First class tickets : "<<sum4<<endl;
+	cout <<"Business class tickets :"<<sum5<<endl;
+	cout << "Economy class tickets: "<<sum6<<endl<<endl;
+	cout << "Total number of tickets purchased of United Airways"<< " : "<<endl;
+	cout <<"First class tickets : "<<sum7<<endl;
+	cout <<"Business class tickets :"<<sum8<<endl;
+	cout << "Economy class tickets: "<<sum9<<endl<<endl;
+	cout << "Total number of tickets purchased Fly Emirates"<< " : "<<endl; 
+	cout <<"First class tickets : "<<sum10<<endl;
+	cout <<"Business class tickets :"<<sum11<<endl;
+	cout << "Economy class tickets: "<<sum12<<endl<<endl;
+	cout << "Total number of tickets purchased of Turkish Airlines"<< " : "<<endl;
+	cout <<"First class tickets : "<<sum13<<endl;
+	cout <<"Business class tickets :"<<sum14<<endl;
+	cout << "Economy class tickets: "<<sum15<<endl<<endl;
+	cout << "Total number of ticket purchased "<< " : "<< sum1+sum2+sum3+sum4+sum5+sum6+sum7+sum8+sum9+sum10+sum11+sum12+sum13+sum14+sum15<<endl;
+	cout << "Remaining amount in your account: "<< amount<<endl;
+}
+
+int main() {
+ 
+system ("color f8");
+cout << "\033[33m";
+
+
+	cout<<"================================================================================================="<<endl;
+	cout<<setw(70)<<"FLIGHT TICKET BOOKING MANAGEMENT\n";
+	cout<<"================================================================================================="<<endl;
+	passenger_info p1;
+	cout<<"Enter your name : ";
+	fflush(stdin);
+	getline(cin,p1.name);
+	cout<<"Enter your age : ";
+	cin>>p1.age;
+	cout<<"Enter your passport number : ";
+	fflush(stdin);
+	getline(cin,p1.passport_num);
+	cout<<"Enter your email address : ";
+	fflush(stdin);
+	getline(cin,p1.email);
+
+cout<<"================================================================================================="<<endl;
+cout<<setw(70)<<"Welcome into Nikta Airlines\n";
+cout<<"================================================================================================="<<endl;
+
+string flight_name[5]={"FRENCH AIRLINES","DUBAI AIRLINES","UNITED AIRWAYS","FLY EMIRATES","TURKISH AIRLINES"};
+string dept_time [5]= {"9:00", "10:00", "11:00", "12:00", "1:00"};
+string destination [5]= {"Paris", "Baku", "New York", "Dubai", "Istanbul"};
+int price_FClass[5]={55000, 50000, 48000, 45000, 43000};
+int price_BClass[5]= {45000, 40000, 38000, 35000, 33000};
+int price_EClass[5]= {35000, 30000, 28000, 25000, 23000};
+	cout<<left<<setw(22)<<"FlightName"<<setw(18)<<"DepartureTime"<<setw(22)<<"Destination"<<setw(18)<<"First Class"<<setw(18)<<"Business Class"<<setw(18)<<"Economy Class"<<endl;
+for (int i=0; i<5; i++) {
+	
+	cout<<left<<setw(22)<<flight_name[i]<<right<<setw(12)<<dept_time[i]<<setw(15)<<destination[i]<<setw(20)<<price_FClass[i]<<setw(20)<<price_BClass[i]<<setw(20)<<price_EClass[i]<<endl;
+}
+
+
+ticket_booking();
+cancel_ticket();
+Final_data();
+
+
+	return 0;
+}
